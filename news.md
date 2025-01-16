@@ -1,4 +1,4 @@
-**Meta planea despidos masivos y reemplazo de ingenieros por inteligencia artificial**. [](https://larepublica.es/2025/01/14/meta-planea-despidos-masivos-y-reemplazo-de-ingenieros-por-inteligencia-artificial/)
+**Meta planea despidos masivos y reemplazo de ingenieros por inteligencia artificial**. [new](https://larepublica.es/2025/01/14/meta-planea-despidos-masivos-y-reemplazo-de-ingenieros-por-inteligencia-artificial/)
 
 
 
