@@ -1,0 +1,125 @@
+name: Deployment Express App Pipeline
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  avoid-redundancy:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel Previous redundant Runs
+        uses: styfle/cancel-workflow-action@0.9.1
+        with:
+          access_token: ${{ github.token }}
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: "master"
+          fetch-depth: "0"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.17.0"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run lint
+        run: npm run lint
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: "master"
+          fetch-depth: "0"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.17.0"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Transpile .ts into .js
+        run: npm run build
+
+      - name: Build and upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifact
+          path: ./dist
+          if-no-files-found: "error"
+          retention-days: 1
+          compression-level: "6"
+          overwrite: true
+          include-hidden-files: false
+
+  test:
+    needs: [lint, build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: "master"
+          fetch-depth: "0"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.17.0"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Download built artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifact
+          path: ./dist
+
+      - name: Run test health resource
+        run: npm run test-health:pro
+
+      - name: Run test crud /user resource
+        run: npm run test-crud:pro
+
+      - name: Run test /auth resource
+        run: npm run test-auth:pro
+
+  deploy:
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: "master"
+          fetch-depth: "0"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.17.0"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Download built artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifact
+          path: ./dist
+
+
+          

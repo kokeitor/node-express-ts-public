@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificación Correo</title>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    "
+  >
+    <div
+      style="
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      "
+    >
+      <!-- Logo de Chic Cut -->
+      <img
+        src="{url_logo}"
+        alt="ChicCut Logo"
+        style="max-width: 150px; margin-bottom: 20px"
+      />
+
+      <!-- Título y Mensaje -->
+      <h1
+        align="center"
+        style="color: #825a99; font-size: 66px; font-family: Dotum"
+      >
+        CHIC CUT
+      </h1>
+
+      <p
+        style="
+          direction: ltr;
+          font-family: Arial;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: center;
+          color: #000000;
+        "
+      >
+        <strong>Hola! {user_name}</strong><br />
+        Gracias por registrarte en Chic Cut.<br /><br />Para completar tu
+        registro, por favor accede al siguiente enlace de verificación. Este
+        enlace es válido por un tiempo limitado.
+      </p>
+
+      <!-- Enlace de Verificación -->
+      <div
+        style="
+          margin: 20px 0;
+          padding: 20px;
+          background-color: #f0f0f0;
+          text-align: center;
+          border-radius: 4px;
+        "
+      >
+        <a
+          href="{app_url}:{port}/{api_url}/{resource}/{verify-endpoint}/{token}"
+          style="font-size: 18px; color: #1a73e8; text-decoration: none"
+        >
+          Verificar mi cuenta
+        </a>
+      </div>
+
+      <!-- Instrucción en caso de error -->
+      <p
+        style="
+          direction: ltr;
+          font-family: Arial;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: center;
+          color: #000000;
+        "
+      >
+        Si encuentras algún problema, intenta iniciar sesión en nuestra web.
+        Recibirás un nuevo correo de verificación en tu bandeja de entrada.
+      </p>
+
+      <!-- Firma -->
+      <p
+        style="
+          direction: ltr;
+          font-family: Arial;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: center;
+          color: #000000;
+        "
+      >
+        ¡ Esperamos verte pronto {user_nickname}!<br />
+      </p>
+      <p
+        style="
+          direction: ltr;
+          font-family: Arial;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: center;
+          color: #000000;
+        "
+      >
+        El equipo de Chic Cut.
+      </p>
+    </div>
+  </body>
+</html>
