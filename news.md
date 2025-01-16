@@ -1,12 +1,12 @@
-**Meta planea despidos masivos y reemplazo de ingenieros por inteligencia artificial**. [new](https://larepublica.es/2025/01/14/meta-planea-despidos-masivos-y-reemplazo-de-ingenieros-por-inteligencia-artificial/)
+[**Meta planea despidos masivos y reemplazo de ingenieros por inteligencia artificial**](https://larepublica.es/2025/01/14/meta-planea-despidos-masivos-y-reemplazo-de-ingenieros-por-inteligencia-artificial/)
 
 
 
-**Más IA, menos personal: Salesforce no contratará ingenieros este año**. [](https://www.itnow.connectab2b.com/post/mas-ia-menos-personal-salesforce-no-contratara-ingenieros-este-ano)
+[**Más IA, menos personal: Salesforce no contratará ingenieros este año**](https://www.itnow.connectab2b.com/post/mas-ia-menos-personal-salesforce-no-contratara-ingenieros-este-ano)
 
 
 
-**Jensen Huang, el CEO de NVIDIA, a los jóvenes: "No aprendáis programación, la IA se encargará de todo"**. [](https://computerhoy.20minutos.es/tecnologia/ceo-nvidia-jovenes-no-aprendais-programacion-1367669)
+[**Jensen Huang, el CEO de NVIDIA, a los jóvenes: "No aprendáis programación, la IA se encargará de todo"**](https://computerhoy.20minutos.es/tecnologia/ceo-nvidia-jovenes-no-aprendais-programacion-1367669)
 
 
 
