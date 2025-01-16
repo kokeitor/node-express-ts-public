@@ -28,7 +28,7 @@ Tras leer el libro y en el contexto de estas declaraciones de líderes tecnológ
 
 En un futuro cercano, el rol de los desarrolladores es crucial.
 
-Ya no solo necesitamos saber escribir código, sino también poseer el conocimiento técnico suficiente para saber supervisar, dirigir y qué solicitar a los nuevos modelos de inteligencia artificial de estas empresas. Todo esto con el objetivo de que sean capaces de crear proyectos de software de alto nivel, eso si, a un ritmo más rapido que nosotros.
+Ya no solo necesitamos saber escribir código, sino también poseer el conocimiento técnico suficiente para saber supervisar, dirigir y qué solicitar a los nuevos modelos de inteligencia artificial de estas empresas. Todo esto con el objetivo de que sean capaces de crear proyectos de software de alto nivel, eso sí, a un ritmo más rápido que nosotros.
 
 Los patrones de diseño que se detallan en este libro son un ejemplo claro de algunos de los conceptos técnicos que serán esenciales para los profesionales.
 
