@@ -14,7 +14,7 @@ El autor clasifica los patrones de diseño en tres categorías principales:
 
 - **Patrones Creacionales**: Mecanismos para crear objetos de forma flexible y eficiente, fundamentales para estructurar código reutilizable. Incluyen *Abstract Factory*, *Builder*, *Singleton*...
 
-- **Patrones Estructurales**: Estructuras para ensamblar componentes complejos, asegurando escalabilidad y claridad. Ejemplos: *Adapter*, *Bridge*, *Decorator*, *Flyweight*, *Proxy*...
+- **Patrones Estructurales**: Estructuras para ensamblar componentes complejos, asegurando escalabilidad y claridad.
 
 - **Patrones de Comportamiento**: Soluciones que definen cómo interactúan los componentes de un sistema, optimizando comunicación y asignación de responsabilidades.Ejemplos: *State*, *Iterator*, *Strategy*...
 
@@ -26,6 +26,7 @@ Pero, ¿dónde encajan aquí las noticias recientes mencionadas?
 
 Tras leer el libro y en el contexto de estas declaraciones de líderes tecnológicos como el CEO de NVIDIA, Meta o Salesforce, creo que se está extrayendo un mensaje erróneo.
 
+En un futuro cercano, el rol de los desarrolladores es crucial. 
 En un futuro cercano, el rol de los desarrolladores es crucial. 
 
 Ya no solo necesitamos saber escribir código, sino también poseer el conocimiento técnico suficiente para saber supervisar, dirigir y qué solicitar a los nuevos modelos de inteligencia artificial de estas empresas. Todo esto con el objetivo de que sean capaces de crear proyectos de software de alto nivel, eso sí, a un ritmo más rápido que nosotros. 🚀
